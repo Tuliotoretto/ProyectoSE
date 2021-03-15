@@ -4,6 +4,6 @@
 #include "teclado.h"
 
 void tecladoConfig(void) {
-    SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R14 | SYSCTL_RCGCGPIO_R7
+    SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R14 | SYSCTL_RCGCGPIO_R7;
 }
 

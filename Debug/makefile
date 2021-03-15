@@ -10,7 +10,7 @@ GEN_CMDS__FLAG :=
 ORDERED_OBJS += \
 "./main.obj" \
 "./tm4c1294ncpdt_startup_ccs.obj" \
-"./teclado/teclado.obj" \
+"./recursos/teclado/teclado.obj" \
 "../tm4c1294ncpdt.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \
@@ -23,9 +23,9 @@ RMDIR := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir_vars.mk
--include teclado/subdir_vars.mk
+-include recursos/teclado/subdir_vars.mk
 -include subdir_rules.mk
--include teclado/subdir_rules.mk
+-include recursos/teclado/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -156,8 +156,8 @@ ProyectoSE.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "tm4c1294ncpdt_startup_ccs.obj" "teclado/teclado.obj" 
-	-$(RM) "main.d" "tm4c1294ncpdt_startup_ccs.d" "teclado/teclado.d" 
+	-$(RM) "main.obj" "tm4c1294ncpdt_startup_ccs.obj" "recursos/teclado/teclado.obj" 
+	-$(RM) "main.d" "tm4c1294ncpdt_startup_ccs.d" "recursos/teclado/teclado.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
