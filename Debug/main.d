@@ -13,6 +13,7 @@ main.obj: /Users/tulio/Applications/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/inc
 main.obj: /Users/tulio/Applications/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include/sys/_stdint.h
 main.obj: /Users/tulio/Applications/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include/stdbool.h
 main.obj: /Users/tulio/CCS_proyects/SW-TM4C-2.1.4.178/inc/tm4c1294ncpdt.h
+main.obj: ../teclado/teclado.h
 
 ../main.c: 
 /Users/tulio/Applications/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include/stdint.h: 
@@ -27,3 +28,4 @@ main.obj: /Users/tulio/CCS_proyects/SW-TM4C-2.1.4.178/inc/tm4c1294ncpdt.h
 /Users/tulio/Applications/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include/sys/_stdint.h: 
 /Users/tulio/Applications/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include/stdbool.h: 
 /Users/tulio/CCS_proyects/SW-TM4C-2.1.4.178/inc/tm4c1294ncpdt.h: 
+../teclado/teclado.h: 
