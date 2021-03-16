@@ -40,25 +40,27 @@ void retardotecla(){
 }
 
 char caracter(int y, int x){
-    if((x==0x0E) &&(y==0x0E)){ return '1';}
-    if((x==0x0D) &&(y==0x0E)){ return '2';}
-    if((x==0x0B) &&(y==0x0E)){ return '3';}
-    if((x==0x07) &&(y==0x0E)){ return 'A';}
+    char c;
+    if((x==0x0E) &&(y==0x0E)){ c = '1';}
+    if((x==0x0D) &&(y==0x0E)){ c = '2';}
+    if((x==0x0B) &&(y==0x0E)){ c = '3';}
+    if((x==0x07) &&(y==0x0E)){ c = 'A';}
 
-    if((x==0x0E) &&(y==0x0D)){ return '4';}
-    if((x==0x0D) &&(y==0x0D)){ return '5';}
-    if((x==0x0B) &&(y==0x0D)){ return '6';}
-    if((x==0x07) &&(y==0x0D)){ return 'B';}
+    if((x==0x0E) &&(y==0x0D)){ c = '4';}
+    if((x==0x0D) &&(y==0x0D)){ c = '5';}
+    if((x==0x0B) &&(y==0x0D)){ c = '6';}
+    if((x==0x07) &&(y==0x0D)){ c = 'B';}
 
-    if((x==0x0E) &&(y==0x0B)){ return '7';}
-    if((x==0x0D) &&(y==0x0B)){ return '8';}
-    if((x==0x0B) &&(y==0x0B)){ return '9';}
-    if((x==0x07) &&(y==0x0B)){ return 'C';}
+    if((x==0x0E) &&(y==0x0B)){ c = '7';}
+    if((x==0x0D) &&(y==0x0B)){ c = '8';}
+    if((x==0x0B) &&(y==0x0B)){ c = '9';}
+    if((x==0x07) &&(y==0x0B)){ c = 'C';}
 
-    if((x==0x0E) &&(y==0x07)){ return '*';}
-    if((x==0x0D) &&(y==0x07)){ return '0';}
-    if((x==0x0B) &&(y==0x07)){ return '#';}
-    if((x==0x07) &&(y==0x07)){ return 'D';}
+    if((x==0x0E) &&(y==0x07)){ c = '*';}
+    if((x==0x0D) &&(y==0x07)){ c = '0';}
+    if((x==0x0B) &&(y==0x07)){ c = '#';}
+    if((x==0x07) &&(y==0x07)){ c = 'D';}
+    return c;
 }
 
 char decodifica(int cordenaday){
@@ -78,7 +80,6 @@ char decodifica(int cordenaday){
       if(GPIO_PORTH_AHB_DATA_R==cordenaday){
          return caracter(GPIO_PORTQ_DATA_R,cordenaday);
       }
-
 
 }
 
