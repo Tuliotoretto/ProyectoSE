@@ -3,7 +3,6 @@
 #include "inc/tm4c1294ncpdt.h"
 #include "teclado.h"
 
-
 uint8_t d_uint8Dato;
 
 uint32_t ui32Loop;
@@ -40,7 +39,7 @@ void retardotecla(){
 }
 
 char caracter(int y, int x){
-    char c;
+    char c = 'F';
     if((x==0x0E) &&(y==0x0E)){ c = '1';}
     if((x==0x0D) &&(y==0x0E)){ c = '2';}
     if((x==0x0B) &&(y==0x0E)){ c = '3';}
@@ -99,6 +98,6 @@ char tecla(void){
                tecla2=tecla3;
            }
             return caracter1;
-            }
+           }
      }
 }

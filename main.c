@@ -6,11 +6,14 @@
 #include "recursos/teclado/teclado.h"
 
 void config(void);
-
+char teclaP;
 int main(void)
 {
-    puts("Hello, world!");
     config();
+
+    while(1) {
+        teclaP = tecla();
+    }
 
 	return 0;
 }

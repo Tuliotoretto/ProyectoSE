@@ -9,7 +9,7 @@
 #define TECLADO_TECLADO_H_
 
 void tecladoConfig(void);
-
+char tecla(void);
 
 
 #endif /* TECLADO_TECLADO_H_ */
