@@ -4,16 +4,13 @@
 #include "inc/tm4c1294ncpdt.h"
 
 #include "recursos/teclado/teclado.h"
+#include "recursos/display/display.h"
 
 void config(void);
 char teclaP;
 int main(void)
 {
     config();
-
-    while(1) {
-        teclaP = tecla();
-    }
 
 	return 0;
 }

@@ -5,6 +5,8 @@
 #include "driverlib/rom_map.h"
 #include "driverlib/sysctl.h"
 
+#include "display.h"
+
 void com(uint32_t M,uint32_t D){
     GPIO_PORTK_DATA_R = D;  //MANDAMOS EL DATO POR EL PORTK
     GPIO_PORTM_DATA_R = M;  //MANDAMOS INFORMACI�N DE LOS PINES DONDE EST�N EL e Y EL R/S

@@ -8,7 +8,7 @@
 #ifndef RECURSOS_DISPLAY_DISPLAY_H_
 #define RECURSOS_DISPLAY_DISPLAY_H_
 
-
+void mostrarDisplay(void);
 
 
 
