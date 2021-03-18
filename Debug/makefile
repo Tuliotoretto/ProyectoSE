@@ -9,6 +9,7 @@ GEN_CMDS__FLAG :=
 
 ORDERED_OBJS += \
 "./main.obj" \
+"./sysctl.obj" \
 "./tm4c1294ncpdt_startup_ccs.obj" \
 "./recursos/display/display.obj" \
 "./recursos/teclado/teclado.obj" \
@@ -159,8 +160,8 @@ ProyectoSE.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "tm4c1294ncpdt_startup_ccs.obj" "recursos/display/display.obj" "recursos/teclado/teclado.obj" 
-	-$(RM) "main.d" "tm4c1294ncpdt_startup_ccs.d" "recursos/display/display.d" "recursos/teclado/teclado.d" 
+	-$(RM) "main.obj" "sysctl.obj" "tm4c1294ncpdt_startup_ccs.obj" "recursos/display/display.obj" "recursos/teclado/teclado.obj" 
+	-$(RM) "main.d" "sysctl.d" "tm4c1294ncpdt_startup_ccs.d" "recursos/display/display.d" "recursos/teclado/teclado.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

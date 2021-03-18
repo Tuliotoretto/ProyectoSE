@@ -12,16 +12,17 @@ uint8_t  tecla3;
 uint8_t  caracter1;
 
 void tecladoConfig(void) {
+
     SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R14 | SYSCTL_RCGCGPIO_R7 | SYSCTL_RCGCGPIO_R12 ;
     ui32Loop = SYSCTL_RCGCGPIO_R;
 
 
-    GPIO_PORTQ_DIR_R   =0xF;     // bit 7 6 5 4 3 2 1 0
-    GPIO_PORTQ_DEN_R   =0xF;     //             1 1 1 1  =0xF
+    GPIO_PORTQ_DIR_R   =0xF;    // bit 7 6 5 4 3 2 1 0
+    GPIO_PORTQ_DEN_R   =0xF;    //             1 1 1 1  out
     GPIO_PORTQ_DATA_R  =0x0;
 
-    GPIO_PORTH_AHB_DIR_R  =0x0;
-    GPIO_PORTH_AHB_DEN_R  =0xF;
+    GPIO_PORTH_AHB_DIR_R  =0x0; // bit 7 6 5 4 3 2 1 0
+    GPIO_PORTH_AHB_DEN_R  =0xF; //             1 1 1 1  in
     GPIO_PORTH_AHB_PUR_R  =0xF;
 
     GPIO_PORTN_DIR_R   =0x03;

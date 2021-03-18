@@ -9,7 +9,7 @@
 #define RECURSOS_DISPLAY_DISPLAY_H_
 
 void mostrarDisplay(void);
-
+void displayConfig(void);
 
 
 #endif /* RECURSOS_DISPLAY_DISPLAY_H_ */

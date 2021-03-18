@@ -12,11 +12,19 @@ int main(void)
 {
     config();
 
+    mostrarDisplay();
+
+    char tec;
+    do {
+        tec = tecla();
+    } while (1);
+
 	return 0;
 }
 
 void config(void) {
     tecladoConfig();
+    displayConfig();
 }
 
 
